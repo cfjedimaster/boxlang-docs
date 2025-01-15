@@ -27,7 +27,7 @@ File Types:
 // Infered as 'String'
 name = "boxlang"
 
-// Inferred as Integer
+// Inferred as Double
 age = 1
 // But I can redeclare it to a string if I need to
 age = "one"
@@ -504,7 +504,7 @@ BoxLang supports the null coalescing operator `?:` to allow you to evaluate if v
 ( expression ) ?: 'value or expression'
 ```
 
-This tests the left-hand side of the `?:` and if its `null` then it will evaluate the rigth expression or value. This can be used on if statements, assignments, loops, etc.
+This tests the left-hand side of the `?:` and if its `null` then it will evaluate the right expression or value. This can be used on if statements, assignments, loops, etc.
 
 ## Safe Navigation Operator
 
@@ -656,7 +656,7 @@ function hello( name = variables.defaultName ){
 
 ### Argument Collections
 
-Similar to var arguments in Java, BoxLang allows the `arguments` scope to be completely be variable. meaning you can declare the arguments, but you can pass as many as you like and they will all be added into the `arguments` scope.
+Similar to var arguments in Java, BoxLang allows the `arguments` scope to be completely variable. Meaning you can declare the arguments, but you can pass as many as you like and they will all be added into the `arguments` scope.
 
 Another feature is that you can bind and apply these arguments at function execution time from any map or structure via the `argumentCollection` special argument. This allows you to collect arguments and dispatch the function call, and BoxLang will match the argument names for you. This can be great for dynamic argument collection, form collection, JSON packets, etc.
 
